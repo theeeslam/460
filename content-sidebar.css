@@ -25,3 +25,17 @@ Layout: Content-Sidebar
 	clear: both;
 	width: 100%;
 }
+.entry-header
+.entry-content
+.entry-meta
+.entry-footer
+.tag-links
+.post-navigation
+.comments-area
+.paging-navingation {
+	position: relative;
+	max-width: 780px;
+	max-width: 78rem;
+	padding: 0 4rem;
+	margin: 0 auto;
+	}
