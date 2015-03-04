@@ -273,7 +273,7 @@ textarea {
 	color: #404040;
 	color: hsl (0, 0%, 25%);
 	font-size: 15px;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	line-height: 1.5;
 	font-family: 'PT Sans', serif;
 }
@@ -515,7 +515,7 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #000000;
 }
 
 a:visited {
@@ -525,7 +525,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #000000;
 }
 
 a:focus {
