@@ -113,10 +113,6 @@ dfn {
 	font-style: italic;
 }
 
-h1 {
-	font-size: 1.2rem;
-	margin: 0.67em 0;
-}
 
 mark {
 	background: #ff0;
@@ -282,14 +278,7 @@ textarea {
 	
 }
 
-h1, h2, h3, h4, h5, h6 {
-	clear: right;
-	font-weight: 900;
-	font-family: 'Oswald', sans-serif;
-	color: #404040;
-	color: hsl(0, 0%, 0%);
-	
-}
+
 p {
 	margin-bottom: 1.5em;
 	
@@ -734,50 +723,6 @@ a:active {
 }
 }
 
-/* Social Menu */
-
-.menu-social ul {
-    float: right;
-    text-align: center;
-    list-style: none;    
-}
-
-.menu-social ul li {
-    position: relative;
-    display:  inline-block;    
-}
-
-/* Puts a icon in front of each menu item */
-.menu-social li a:before {
-    display: inline-block;
-    padding: 0 5px;
-    vertical-align: top;
-    font-family: 'Fontawesome';
-    font-size: 20px;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    content: '\f230';
-}
-/* This checks for specific strings in a link such as "facebook" and if it finds them it displays a specific icon in front */
-.menu-social li a[href*="facebook.com"]::before { content: '\f09a'; }
-
-.menu-social li a[href*="twitter.com"]::before { content: '\f099'; }
-/* makes the social menu stay visible when the theme is displayed on mobile screens up to 600px */
-
-@media screen and (max-width: 600px) {
-    #menu-social ul {
-	    position: absolute;
-        top: 0;
-        right: 6rem;
-        display: block;
-    }
-    
-    #menu-social li a { 
-        padding-left:.5em;
-        padding-right: .5em;
-    }
-}
-     
 /*--------------------------------------------------------------
 5.3 Search
 --------------------------------------------------------------*/
@@ -1016,8 +961,11 @@ input[type="search"] {
 .entry-content {
 	
 }
+/* centers the primary elements where the content goes to the page */
 #primary{
 	width: 100%;
+	position: relative;
+	margin: 0 auto;
 }
 
 
@@ -1026,6 +974,9 @@ input[type="search"] {
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
+	display: none;
+}
+.entry-title {
 	display: none;
 }
 

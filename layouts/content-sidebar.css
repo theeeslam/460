@@ -39,20 +39,9 @@ Layout: Content-Sidebar
 	}
 
 @media screen and (min-width: 1540px) {
-    .content-area {
-        float: left;
-        width: 100%;
-        margin-right: -380px;
     }
-}
 
 @media screen and (min-width: 1160px) and (max-width: 1539px) {
-    .content-area {
-        width: 100%;
-        float: left;
-        margin-left: -380px;
-        padding-left: 380px;
-    }
     
     .entry-header,
     .entry-content,
@@ -75,4 +64,4 @@ Layout: Content-Sidebar
         margin: 1em auto 0;
     }
 }
-  
+ 
