@@ -51,7 +51,6 @@ function musiq_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'musiq' ),
-		'social'=> __( 'Social Menu', 'musiq' ),
 	) );
 
 	/*
@@ -101,16 +100,12 @@ add_action( 'widgets_init', 'musiq_widgets_init' );
  * Enqueue scripts and styles.
  */
 function musiq_scripts() {
-	
 	wp_enqueue_style( 'musiq-style', get_stylesheet_uri() );
 	
-	// getting the content-sidebar style sheet to move the sidebar to the right
-	wp_enqueue_style( 'musiq-content-sidebar', get_template_directory_uri () . '/layouts/content-sidebar.css' );
+	wp_enqueue_style( 'musiq-style-content-sidebar', get_template_directory_uri() . '/layouts/content-sidebar.css' );
 	
-	// adding custom fonts to the website
 	wp_enqueue_style( 'musiq-style-google-fonts', 'http://fonts.googleapis.com/css?family=PT+Sans:400,700italic|Oswald:400,700' );
 	
-	// adding custom icons to the website for use
 	wp_enqueue_style( 'music-style-icons', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
 
 	wp_enqueue_script( 'musiq-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );

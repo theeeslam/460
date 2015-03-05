@@ -278,6 +278,7 @@ textarea {
 	font-size: 1.1rem;
 	line-height: 1.5;
 	font-family: 'PT Sans', serif;
+	border: dotted;
 	
 	
 }
@@ -500,7 +501,7 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: #70A1F4;
+	color: #303030;
 	padding-right: 50px;
 }
 
@@ -530,6 +531,7 @@ a:active {
 /* Base navigation menu is here. Styling this gives the menu it's shape */
 .main-navigation {
     position: relative;
+    float: left;
     width: 100%;
     display: block;
     clear: both;
@@ -537,9 +539,6 @@ a:active {
     text-transform: uppercase;
     background: #313131;
     background: hsl(0, 0%, 19%);
-	text-align: center;
-	height: 62px;
-	
 }
 .main-navigation ul {
     list-style: none;
@@ -547,8 +546,8 @@ a:active {
     padding-left: 0;
 }
 .main-navigation li {
+    float: left;
     position: relative;
-	display: inline-block;
 }
 
 /* This is the link menu. Each menu item is displayed here */
@@ -1016,10 +1015,6 @@ input[type="search"] {
 .entry-content {
 	
 }
-#primary{
-	width: 100%;
-}
-
 
 /*--------------------------------------------------------------
 10.2 Asides

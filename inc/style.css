@@ -274,21 +274,50 @@ select,
 textarea {
 	color: #404040;
 	color: hsl (0, 0%, 25%);
-	font-size: 11px;
-	font-size: 1.1rem;
+	font-size: 10px;
+	font-size: 1rem;
 	line-height: 1.5;
 	font-family: 'PT Sans', serif;
 	
 	
 }
 
-h1, h2, h3, h4, h5, h6 {
+h5,
+h6 {
 	clear: right;
 	font-weight: 900;
-	font-family: 'Oswald', sans-serif;
-	color: #404040;
+	font-family: 'Oswald', serif;
+	color: #000;
 	color: hsl(0, 0%, 0%);
 	
+}
+h1 {
+	font-size: 1.2rem;
+	clear: right;
+	font-weight: 900;
+	font-family: 'Oswald', serif;
+	color: #000;
+	color: hsl(0, 0%, 0%);
+}
+
+	
+h2 {
+    font-size: 1.5rem;
+    margin-top: 6rem;
+}
+
+h3 { 
+    font-size: 1.25rem;
+    padding-bottom: .4rem;
+    margin-top: 4rem;
+    margin-bottom: -.4rem;
+    border-bottom: 1px solid hsl(0, 0%, 75%);
+}
+
+h4 {
+    font-size: 1.8rem;
+    margin-top: 2.4rem;
+    margin-bottom: 1.2rem;
 }
 p {
 	margin-bottom: 1.5em;
@@ -500,7 +529,7 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: #70A1F4;
+	color: #000000;
 	padding-right: 50px;
 }
 
@@ -530,6 +559,7 @@ a:active {
 /* Base navigation menu is here. Styling this gives the menu it's shape */
 .main-navigation {
     position: relative;
+    float: left;
     width: 100%;
     display: block;
     clear: both;
@@ -537,9 +567,6 @@ a:active {
     text-transform: uppercase;
     background: #313131;
     background: hsl(0, 0%, 19%);
-	text-align: center;
-	height: 62px;
-	
 }
 .main-navigation ul {
     list-style: none;
@@ -547,8 +574,8 @@ a:active {
     padding-left: 0;
 }
 .main-navigation li {
+    float: left;
     position: relative;
-	display: inline-block;
 }
 
 /* This is the link menu. Each menu item is displayed here */
@@ -638,7 +665,7 @@ a:active {
             font-size: 1.4rem;
             text-decoration: none;
             line-height: 3.75em;
-            color: black;
+            color: white;
 	}
         
 	.main-navigation.toggled .nav-menu {
@@ -909,7 +936,7 @@ input[type="search"] {
 8.5 Header
 --------------------------------------------------------------*/
 .site-branding {
-    padding: 1rem 0;
+    padding: 4rem 0;
     text-align: center;
     background: #2c86ba;
     background: hsl(202, 62%, 45%);
@@ -931,8 +958,7 @@ input[type="search"] {
 }
                     
 .title-box {
-    width: 600px;
-	height: 300px;
+    width: 200px;
     max-width: 55%;
     padding: 4rem;
     margin: 0 auto;
@@ -1013,13 +1039,6 @@ input[type="search"] {
 	clear: both;
 	margin: 0 0 1.5em;
 }
-.entry-content {
-	
-}
-#primary{
-	width: 100%;
-}
-
 
 /*--------------------------------------------------------------
 10.2 Asides
